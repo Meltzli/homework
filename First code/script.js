@@ -1,0 +1,1 @@
+alert('Press OK if вам нравится мой site')
