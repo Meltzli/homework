@@ -1,0 +1,38 @@
+* {
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    background: #e7e8d2;
+    max-height: 500px;
+    border-radius: 20px 0px 0px 20px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.item {
+    background: #c1943a;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 25px;
+    max-width: 200px;
+    max-height: 300px;
+    text-align: center;
+    box-shadow: inset black 0 0 10px;
+    outline: rgb(33, 33, 118) 1px dashed;
+
+}
+
+.title {
+    font-size: 30px;
+    padding: 8px 10px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p {
+    padding: 0px 8px;
+}
