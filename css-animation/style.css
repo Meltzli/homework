@@ -1,0 +1,59 @@
+.layout {
+    background-color: rgb(47, 47, 47);
+}
+
+.loading__imitation {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: gray;
+    transform:translateX(-50%) translateY(80%);
+    left:50%;
+    z-index: 1;
+}
+
+
+.loading__bar {
+    position: absolute;
+    background-color: antiquewhite;
+    top: -50px;
+    left: -13%;
+    width: 0px;
+    height: 30px;
+}
+
+.sucssess {
+    font-size: 40px;
+    color: rgb(4, 212, 52);
+    max-width: 100%;
+    text-align: center;
+    padding: 150px 0;
+    opacity: 0;
+}
+
+.loading__imitation:hover .loading__bar {
+    animation: loading 4s forwards;
+}
+
+.loading__imitation:hover .sucssess {
+    animation: appear 4s forwards;
+}
+
+@keyframes loading {
+    from {
+        width:0%
+    }
+    to {
+        width: 125%;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    99.9% {
+        opacity: 1;
+    }
+}
